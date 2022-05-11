@@ -1,0 +1,412 @@
+
+*** Running vivado
+    with args -log design_1_dvi2rgb_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_dvi2rgb_0_0.tcl
+
+
+
+****** Vivado v2021.2.1 (64-bit)
+  **** SW Build 3414424 on Sun Dec 19 10:57:22 MST 2021
+  **** IP Build 3405791 on Sun Dec 19 15:54:35 MST 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_1_dvi2rgb_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1452.176 ; gain = 8.312
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Stanc/Documents/GitHub/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top design_1_dvi2rgb_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 39576
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1452.176 ; gain = 0.000
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1565] actual for formal port arst is neither a static name nor a globally static expression [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/TMDS_Clocking.vhd:135]
+WARNING: [Synth 8-1565] actual for formal port arst is neither a static name nor a globally static expression [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/dvi2rgb.vhd:212]
+WARNING: [Synth 8-1565] actual for formal port potherchrdy is neither a static name nor a globally static expression [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/dvi2rgb.vhd:244]
+WARNING: [Synth 8-1565] actual for formal port potherchvld is neither a static name nor a globally static expression [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/dvi2rgb.vhd:245]
+INFO: [Synth 8-638] synthesizing module 'design_1_dvi2rgb_0_0' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/synth/design_1_dvi2rgb_0_0.vhd:81]
+	Parameter kEmulateDDC bound to: 1 - type: bool 
+	Parameter kRstActiveHigh bound to: 0 - type: bool 
+	Parameter kClkRange bound to: 2 - type: integer 
+	Parameter kIDLY_TapValuePs bound to: 78 - type: integer 
+	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
+	Parameter kAddBUFG bound to: 1 - type: bool 
+	Parameter kEdidFileName bound to: dgl_720p_cea.data - type: string 
+	Parameter kDebug bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'dvi2rgb' declared at 'c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/dvi2rgb.vhd:64' bound to instance 'U0' of component 'dvi2rgb' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/synth/design_1_dvi2rgb_0_0.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'dvi2rgb' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/dvi2rgb.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Clocking' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/TMDS_Clocking.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'ResetBridge' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (1#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (2#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-113] binding component instance 'IDelayCtrlX' to cell 'IDELAYCTRL' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/TMDS_Clocking.vhd:125]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/TMDS_Clocking.vhd:139]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 12.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 2.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'DVI_ClkGenerator' to cell 'MMCME2_ADV' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/TMDS_Clocking.vhd:180]
+INFO: [Synth 8-113] binding component instance 'SerialClkBuffer' to cell 'BUFIO' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/TMDS_Clocking.vhd:239]
+	Parameter BUFR_DIVIDE bound to: 5 - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-113] binding component instance 'PixelClkBuffer' to cell 'BUFR' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/TMDS_Clocking.vhd:245]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized0' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized0' (2#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Clocking' (3#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/TMDS_Clocking.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'ResetBridge__parameterized0' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized1' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized1' (3#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge__parameterized0' (3#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Decoder' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/TMDS_Decoder.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'InputSERDES' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/InputSERDES.vhd:85]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/InputSERDES.vhd:92]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string 
+	Parameter IDELAY_TYPE bound to: VARIABLE - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+INFO: [Synth 8-113] binding component instance 'InputDelay' to cell 'IDELAYE2' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/InputSERDES.vhd:102]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: IFD - type: string 
+	Parameter NUM_CE bound to: 2 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+INFO: [Synth 8-113] binding component instance 'DeserializerMaster' to cell 'ISERDESE2' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/InputSERDES.vhd:130]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: IFD - type: string 
+	Parameter NUM_CE bound to: 2 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+INFO: [Synth 8-113] binding component instance 'DeserializerSlave' to cell 'ISERDESE2' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/InputSERDES.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'InputSERDES' (4#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/InputSERDES.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'SyncBase' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/SyncBase.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'SyncBase' (5#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/SyncBase.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'SyncBase__parameterized0' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/SyncBase.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'SyncBase__parameterized0' (5#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/SyncBase.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'PhaseAlign' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/PhaseAlign.vhd:95]
+WARNING: [Synth 8-6014] Unused sequential element pTkn0FlagQ_reg was removed.  [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/PhaseAlign.vhd:172]
+WARNING: [Synth 8-6014] Unused sequential element pTkn1FlagQ_reg was removed.  [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/PhaseAlign.vhd:173]
+WARNING: [Synth 8-6014] Unused sequential element pTkn2FlagQ_reg was removed.  [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/PhaseAlign.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element pTkn3FlagQ_reg was removed.  [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/PhaseAlign.vhd:175]
+WARNING: [Synth 8-6014] Unused sequential element pDelayFastOvf_reg was removed.  [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/PhaseAlign.vhd:209]
+INFO: [Synth 8-256] done synthesizing module 'PhaseAlign' (6#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/PhaseAlign.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'ChannelBond' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/ChannelBond.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'ChannelBond' (7#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/ChannelBond.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Decoder' (8#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/TMDS_Decoder.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'ResyncToBUFG' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/ResyncToBUFG.vhd:78]
+INFO: [Synth 8-113] binding component instance 'InstBUFG' to cell 'BUFG' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/ResyncToBUFG.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'ResyncToBUFG' (9#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/ResyncToBUFG.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'EEPROM_8b' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/EEPROM_8b.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'TWI_SlaveCtl' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/TWI_SlaveCtl.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'GlitchFilter' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/GlitchFilter.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'GlitchFilter' (10#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/GlitchFilter.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'TWI_SlaveCtl' (11#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/TWI_SlaveCtl.vhd:87]
+INFO: [Synth 8-226] default block is never used [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/EEPROM_8b.vhd:201]
+INFO: [Synth 8-256] done synthesizing module 'EEPROM_8b' (12#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/EEPROM_8b.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'dvi2rgb' (13#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/f99d/src/dvi2rgb.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dvi2rgb_0_0' (14#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/synth/design_1_dvi2rgb_0_0.vhd:81]
+WARNING: [Synth 8-7129] Port aRst in module dvi2rgb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pRst in module dvi2rgb is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:47 ; elapsed = 00:01:05 . Memory (MB): peak = 1615.375 ; gain = 163.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:01:06 . Memory (MB): peak = 1615.375 ; gain = 163.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:48 ; elapsed = 00:01:06 . Memory (MB): peak = 1615.375 ; gain = 163.199
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1615.375 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/dvi2rgb_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/dvi2rgb_ooc.xdc] for cell 'U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_refclk'. The XDC file c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/ila_refclk/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_pixclk'. The XDC file c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/ila_pixclk/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
+Parsing XDC File [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/dvi2rgb.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/dvi2rgb.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_dvi2rgb_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_dvi2rgb_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_dvi2rgb_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_dvi2rgb_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_dvi2rgb_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/ila_timing_workaround.xdc] for cell 'U0'
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}'. [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/ila_timing_workaround.xdc:10]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp_q*" && IS_SEQUENTIAL }'. [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/ila_timing_workaround.xdc:10]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}]'. [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/ila_timing_workaround.xdc:10]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}'. [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/ila_timing_workaround.xdc:11]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp_q*" && IS_SEQUENTIAL }'. [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/ila_timing_workaround.xdc:11]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}]'. [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/ila_timing_workaround.xdc:11]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}'. [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/ila_timing_workaround.xdc:12]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp_q*" && IS_SEQUENTIAL }'. [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/ila_timing_workaround.xdc:12]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}]'. [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/ila_timing_workaround.xdc:12]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK"}'. [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/ila_timing_workaround.xdc:13]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter {NAME =~  "*allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg/D"}'. [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/ila_timing_workaround.xdc:13]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK"}]'. [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/ila_timing_workaround.xdc:13]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/ila_timing_workaround.xdc] for cell 'U0'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1619.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1619.129 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:08 ; elapsed = 00:01:33 . Memory (MB): peak = 1619.129 ; gain = 166.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:08 ; elapsed = 00:01:33 . Memory (MB): peak = 1619.129 ; gain = 166.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_dvi2rgb_0_0_synth_1/dont_touch.xdc, line 20).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:33 . Memory (MB): peak = 1619.129 ; gain = 166.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'pState_reg' in module 'PhaseAlign'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TWI_SlaveCtl'
+INFO: [Synth 8-802] inferred FSM for state register 'sState_reg' in module 'EEPROM_8b'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 resetst |                      00000000001 |                      00000000001
+                  idlest |                      00000000010 |                      00000000010
+                 tokenst |                      00000000100 |                      00000000100
+               eyeopenst |                      00000001000 |                      00000001000
+               jtrzonest |                      00000010000 |                      00000010000
+                dlydecst |                      00010000000 |                      00010000000
+          dlytstcenterst |                      00100000000 |                      00100000000
+               alignedst |                      01000000000 |                      01000000000
+                dlyincst |                      00000100000 |                      00000100000
+             dlytstovfst |                      00001000000 |                      00001000000
+            alignerrorst |                      10000000000 |                      10000000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'pState_reg' in module 'PhaseAlign'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  stidle |                              000 |                              000
+               staddress |                              011 |                              001
+            stturnaround |                              110 |                              110
+                  stsack |                              100 |                              100
+                  stread |                              001 |                              010
+                  stmack |                              010 |                              101
+                 stwrite |                              111 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'gray' in module 'TWI_SlaveCtl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  stidle |                             0001 |                               00
+                  stread |                             0010 |                               01
+            stregaddress |                             0100 |                               11
+                 stwrite |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sState_reg' using encoding 'one-hot' in module 'EEPROM_8b'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:10 ; elapsed = 00:01:36 . Memory (MB): peak = 1619.129 ; gain = 166.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port aRst in module dvi2rgb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pRst in module dvi2rgb is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:49 . Memory (MB): peak = 1619.129 ; gain = 166.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:35 ; elapsed = 00:02:03 . Memory (MB): peak = 1619.129 ; gain = 166.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:02:04 . Memory (MB): peak = 1619.129 ; gain = 166.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:37 ; elapsed = 00:02:06 . Memory (MB): peak = 1619.129 ; gain = 166.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:47 ; elapsed = 00:02:17 . Memory (MB): peak = 1619.129 ; gain = 166.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:47 ; elapsed = 00:02:17 . Memory (MB): peak = 1619.129 ; gain = 166.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:47 ; elapsed = 00:02:18 . Memory (MB): peak = 1619.129 ; gain = 166.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:47 ; elapsed = 00:02:18 . Memory (MB): peak = 1619.129 ; gain = 166.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:47 ; elapsed = 00:02:18 . Memory (MB): peak = 1619.129 ; gain = 166.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:47 ; elapsed = 00:02:18 . Memory (MB): peak = 1619.129 ; gain = 166.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |BUFIO      |     1|
+|3     |BUFR       |     1|
+|4     |CARRY4     |    18|
+|5     |IDELAYCTRL |     1|
+|6     |IDELAYE2   |     3|
+|7     |ISERDESE2  |     6|
+|9     |LUT1       |    25|
+|10    |LUT2       |    58|
+|11    |LUT3       |    77|
+|12    |LUT4       |    74|
+|13    |LUT5       |   100|
+|14    |LUT6       |   156|
+|15    |MMCME2_ADV |     1|
+|16    |MUXF7      |    16|
+|17    |MUXF8      |     8|
+|18    |RAM32M     |     6|
+|19    |FDCE       |    12|
+|20    |FDPE       |    20|
+|21    |FDRE       |   449|
+|22    |FDSE       |    12|
+|23    |IBUFDS     |     4|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:47 ; elapsed = 00:02:18 . Memory (MB): peak = 1619.129 ; gain = 166.953
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:02:08 . Memory (MB): peak = 1619.129 ; gain = 163.199
+Synthesis Optimization Complete : Time (s): cpu = 00:01:48 ; elapsed = 00:02:18 . Memory (MB): peak = 1619.129 ; gain = 166.953
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1619.129 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 6 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1619.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+Synth Design complete, checksum: 92ce43cb
+INFO: [Common 17-83] Releasing license: Synthesis
+75 Infos, 22 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:59 ; elapsed = 00:02:41 . Memory (MB): peak = 1619.129 ; gain = 166.953
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_dvi2rgb_0_0_synth_1/design_1_dvi2rgb_0_0.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 42 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_dvi2rgb_0_0_synth_1/design_1_dvi2rgb_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_dvi2rgb_0_0_utilization_synth.rpt -pb design_1_dvi2rgb_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 11 11:37:39 2022...

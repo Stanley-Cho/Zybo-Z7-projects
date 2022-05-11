@@ -1,0 +1,316 @@
+
+*** Running vivado
+    with args -log design_1_axi_dynclk_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_dynclk_0_0.tcl
+
+
+
+****** Vivado v2021.2.1 (64-bit)
+  **** SW Build 3414424 on Sun Dec 19 10:57:22 MST 2021
+  **** IP Build 3405791 on Sun Dec 19 15:54:35 MST 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_1_axi_dynclk_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1450.906 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Stanc/Documents/GitHub/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top design_1_axi_dynclk_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23404
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 1450.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1565] actual for formal port rst is neither a static name nor a globally static expression [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/axi_dynclk.vhd:231]
+WARNING: [Synth 8-1565] actual for formal port s1_clkout0 is neither a static name nor a globally static expression [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/axi_dynclk.vhd:233]
+WARNING: [Synth 8-1565] actual for formal port s1_clkfbout is neither a static name nor a globally static expression [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/axi_dynclk.vhd:234]
+WARNING: [Synth 8-1565] actual for formal port s1_lock is neither a static name nor a globally static expression [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/axi_dynclk.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_dynclk_0_0' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_axi_dynclk_0_0/synth/design_1_axi_dynclk_0_0.vhd:86]
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter kRefClkFreqHz bound to: 100000000 - type: integer 
+	Parameter kVersionMajor bound to: 1 - type: integer 
+	Parameter kVersionMinor bound to: 2 - type: integer 
+	Parameter kAddBUFMR bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'axi_dynclk' declared at 'c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/axi_dynclk.vhd:10' bound to instance 'U0' of component 'axi_dynclk' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_axi_dynclk_0_0/synth/design_1_axi_dynclk_0_0.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'axi_dynclk' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/axi_dynclk.vhd:60]
+	Parameter kRefClkFreqHz bound to: 100000000 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'axi_dynclk_S00_AXI' declared at 'c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/axi_dynclk_S00_AXI.vhd:5' bound to instance 'axi_dynclk_S00_AXI_inst' of component 'axi_dynclk_S00_AXI' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/axi_dynclk.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'axi_dynclk_S00_AXI' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/axi_dynclk_S00_AXI.vhd:93]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/axi_dynclk_S00_AXI.vhd:232]
+INFO: [Synth 8-256] done synthesizing module 'axi_dynclk_S00_AXI' (1#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/axi_dynclk_S00_AXI.vhd:93]
+INFO: [Synth 8-113] binding component instance 'BUFIO_inst' to cell 'BUFIO' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/axi_dynclk.vhd:204]
+	Parameter BUFR_DIVIDE bound to: 5 - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-113] binding component instance 'BUFR_inst' to cell 'BUFR' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/axi_dynclk.vhd:210]
+	Parameter DIV_F bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'mmcme2_drp' declared at 'c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/mmcme2_drp.v:50' bound to instance 'Inst_mmcme2_drp' of component 'mmcme2_drp' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/axi_dynclk.vhd:224]
+INFO: [Synth 8-6157] synthesizing module 'mmcme2_drp' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/mmcme2_drp.v:50]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:63510]
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:63510]
+INFO: [Synth 8-6155] done synthesizing module 'mmcme2_drp' (3#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/mmcme2_drp.v:50]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/SyncAsync.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (4#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/SyncAsync.vhd:73]
+WARNING: [Synth 8-6014] Unused sequential element xLckdFallingFlag_reg was removed.  [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/axi_dynclk.vhd:263]
+INFO: [Synth 8-256] done synthesizing module 'axi_dynclk' (5#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/2a7c/src/axi_dynclk.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_dynclk_0_0' (6#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_axi_dynclk_0_0/synth/design_1_axi_dynclk_0_0.vhd:86]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module axi_dynclk_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module axi_dynclk_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module axi_dynclk_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module axi_dynclk_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module axi_dynclk_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module axi_dynclk_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1450.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 1450.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 1450.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1450.906 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_axi_dynclk_0_0/src/axi_dynclk.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_axi_dynclk_0_0/src/axi_dynclk.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_axi_dynclk_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_axi_dynclk_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1506.977 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 1507.973 ; gain = 0.996
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1507.973 ; gain = 57.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1507.973 ; gain = 57.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_axi_dynclk_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1507.973 ; gain = 57.066
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'mmcme2_drp'
+INFO: [Synth 8-802] inferred FSM for state register 'clk_state_reg' in module 'axi_dynclk'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RESTART |                        000000001 |                             0001
+               WAIT_LOCK |                        000000010 |                             0010
+                WAIT_SEN |                        000000100 |                             0011
+                 ADDRESS |                        000001000 |                             0100
+             WAIT_A_DRDY |                        000010000 |                             0101
+                 BITMASK |                        000100000 |                             0110
+                  BITSET |                        001000000 |                             0111
+                   WRITE |                        010000000 |                             1000
+               WAIT_DRDY |                        100000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'mmcme2_drp'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                            00001 |                              000
+             wait_locked |                            00010 |                              001
+                 wait_en |                            00100 |                              010
+               wait_srdy |                            01000 |                              011
+                 enabled |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'clk_state_reg' using encoding 'one-hot' in module 'axi_dynclk'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 1507.973 ; gain = 57.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	               39 Bit    Registers := 1     
+	               32 Bit    Registers := 9     
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 14    
+	   8 Input   32 Bit        Muxes := 7     
+	   9 Input   16 Bit        Muxes := 1     
+	   9 Input    9 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 5     
+	   9 Input    7 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 5     
+	   9 Input    1 Bit        Muxes := 8     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port s_axi_lite_awprot[2] in module axi_dynclk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_awprot[1] in module axi_dynclk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_awprot[0] in module axi_dynclk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_arprot[2] in module axi_dynclk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_arprot[1] in module axi_dynclk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_arprot[0] in module axi_dynclk is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:59 . Memory (MB): peak = 1507.973 ; gain = 57.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:17 . Memory (MB): peak = 1507.973 ; gain = 57.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:17 . Memory (MB): peak = 1507.973 ; gain = 57.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:18 . Memory (MB): peak = 1507.973 ; gain = 57.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:30 . Memory (MB): peak = 1507.973 ; gain = 57.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:30 . Memory (MB): peak = 1507.973 ; gain = 57.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:30 . Memory (MB): peak = 1507.973 ; gain = 57.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:30 . Memory (MB): peak = 1507.973 ; gain = 57.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:31 . Memory (MB): peak = 1507.973 ; gain = 57.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:31 . Memory (MB): peak = 1507.973 ; gain = 57.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFIO      |     1|
+|2     |BUFR       |     1|
+|3     |LUT1       |     2|
+|4     |LUT2       |    10|
+|5     |LUT3       |     9|
+|6     |LUT4       |    59|
+|7     |LUT5       |    66|
+|8     |LUT6       |   110|
+|9     |MMCME2_ADV |     1|
+|10    |FDCE       |     2|
+|11    |FDRE       |   328|
+|12    |FDSE       |    24|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:31 . Memory (MB): peak = 1507.973 ; gain = 57.066
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:01:26 . Memory (MB): peak = 1507.973 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:31 . Memory (MB): peak = 1507.973 ; gain = 57.066
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1507.973 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1507.973 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 3869f38d
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:46 . Memory (MB): peak = 1507.973 ; gain = 57.066
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_axi_dynclk_0_0_synth_1/design_1_axi_dynclk_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_dynclk_0_0, cache-ID = 49174c34a51b53a7
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_axi_dynclk_0_0_synth_1/design_1_axi_dynclk_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_dynclk_0_0_utilization_synth.rpt -pb design_1_axi_dynclk_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 11 05:07:00 2022...

@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2021.2.1 (64-bit)
+# SW Build 3414424 on Sun Dec 19 10:57:22 MST 2021
+# IP Build 3405791 on Sun Dec 19 15:54:35 MST 2021
+# Start of session at: Wed May 11 08:19:44 2022
+# Process ID: 45540
+# Current directory: C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_rst_ps7_0_200M_1_synth_1
+# Command line: vivado.exe -log design_1_rst_ps7_0_200M_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_rst_ps7_0_200M_1.tcl
+# Log file: C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_rst_ps7_0_200M_1_synth_1/design_1_rst_ps7_0_200M_1.vds
+# Journal file: C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_rst_ps7_0_200M_1_synth_1\vivado.jou
+# Running On: SC_PC, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 4, Host memory: 34185 MB
+#-----------------------------------------------------------
+source design_1_rst_ps7_0_200M_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1416.367 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Stanc/Documents/GitHub/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_rst_ps7_0_200M_1, cache-ID = 3ca2f69520fa8cb3.
+INFO: [Common 17-206] Exiting Vivado at Wed May 11 08:20:07 2022...

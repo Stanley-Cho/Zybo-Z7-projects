@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2.1 (64-bit)
+# SW Build 3414424 on Sun Dec 19 10:57:22 MST 2021
+# IP Build 3405791 on Sun Dec 19 15:54:35 MST 2021
+# Start of session at: Wed May 11 11:39:33 2022
+# Process ID: 53692
+# Current directory: C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/impl_1/design_1_wrapper.vdi
+# Journal file: C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/impl_1\vivado.jou
+# Running On: SC_PC, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 4, Host memory: 34185 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

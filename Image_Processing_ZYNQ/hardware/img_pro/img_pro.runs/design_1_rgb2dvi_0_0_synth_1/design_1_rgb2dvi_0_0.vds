@@ -1,0 +1,287 @@
+#-----------------------------------------------------------
+# Vivado v2021.2.1 (64-bit)
+# SW Build 3414424 on Sun Dec 19 10:57:22 MST 2021
+# IP Build 3405791 on Sun Dec 19 15:54:35 MST 2021
+# Start of session at: Wed May 11 08:14:45 2022
+# Process ID: 44452
+# Current directory: C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_rgb2dvi_0_0_synth_1
+# Command line: vivado.exe -log design_1_rgb2dvi_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_rgb2dvi_0_0.tcl
+# Log file: C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_rgb2dvi_0_0_synth_1/design_1_rgb2dvi_0_0.vds
+# Journal file: C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_rgb2dvi_0_0_synth_1\vivado.jou
+# Running On: SC_PC, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 4, Host memory: 34185 MB
+#-----------------------------------------------------------
+source design_1_rgb2dvi_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1449.934 ; gain = 18.902
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Stanc/Documents/GitHub/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top design_1_rgb2dvi_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 44528
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 1449.934 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_rgb2dvi_0_0' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/synth/design_1_rgb2dvi_0_0.vhd:72]
+	Parameter kGenerateSerialClk bound to: 0 - type: bool 
+	Parameter kClkPrimitive bound to: PLL - type: string 
+	Parameter kRstActiveHigh bound to: 0 - type: bool 
+	Parameter kClkRange bound to: 1 - type: integer 
+	Parameter kD0Swap bound to: 0 - type: bool 
+	Parameter kD1Swap bound to: 0 - type: bool 
+	Parameter kD2Swap bound to: 0 - type: bool 
+	Parameter kClkSwap bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'rgb2dvi' declared at 'c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/d57c/src/rgb2dvi.vhd:62' bound to instance 'U0' of component 'rgb2dvi' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/synth/design_1_rgb2dvi_0_0.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'rgb2dvi' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/d57c/src/rgb2dvi.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'ResetBridge' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/d57c/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/d57c/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (1#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/d57c/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (2#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/d57c/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'OutputSERDES' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/d57c/src/OutputSERDES.vhd:76]
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+INFO: [Synth 8-113] binding component instance 'OutputBuffer' to cell 'OBUFDS' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/d57c/src/OutputSERDES.vhd:83]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'SerializerMaster' to cell 'OSERDESE2' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/d57c/src/OutputSERDES.vhd:92]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'SerializerSlave' to cell 'OSERDESE2' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/d57c/src/OutputSERDES.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'OutputSERDES' (3#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/d57c/src/OutputSERDES.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Encoder' [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/d57c/src/TMDS_Encoder.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Encoder' (4#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/d57c/src/TMDS_Encoder.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'rgb2dvi' (5#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ipshared/d57c/src/rgb2dvi.vhd:94]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rgb2dvi_0_0' (6#1) [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/synth/design_1_rgb2dvi_0_0.vhd:72]
+WARNING: [Synth 8-7129] Port SerialClk in module TMDS_Encoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aRst in module TMDS_Encoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aRst in module rgb2dvi is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1449.934 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 1449.934 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 1449.934 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1449.934 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/src/rgb2dvi_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/src/rgb2dvi_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/src/rgb2dvi.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/src/rgb2dvi.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_rgb2dvi_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_rgb2dvi_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc] for cell 'U0'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1452.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1463.086 ; gain = 10.758
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:49 . Memory (MB): peak = 1463.086 ; gain = 13.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:49 . Memory (MB): peak = 1463.086 ; gain = 13.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_rgb2dvi_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:49 . Memory (MB): peak = 1463.086 ; gain = 13.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:50 . Memory (MB): peak = 1463.086 ; gain = 13.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input    5 Bit       Adders := 9     
+	   4 Input    5 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 3     
+	   8 Input    4 Bit       Adders := 6     
+	   2 Input    4 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 42    
++---Registers : 
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 9     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   4 Input   10 Bit        Muxes := 3     
+	   2 Input    9 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port aRst in module rgb2dvi is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:01:02 . Memory (MB): peak = 1463.086 ; gain = 13.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:20 . Memory (MB): peak = 1463.086 ; gain = 13.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:22 . Memory (MB): peak = 1463.086 ; gain = 13.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:22 . Memory (MB): peak = 1463.086 ; gain = 13.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:10 ; elapsed = 00:01:35 . Memory (MB): peak = 1465.914 ; gain = 15.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:10 ; elapsed = 00:01:35 . Memory (MB): peak = 1465.914 ; gain = 15.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:36 . Memory (MB): peak = 1465.914 ; gain = 15.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:01:36 . Memory (MB): peak = 1465.914 ; gain = 15.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:36 . Memory (MB): peak = 1465.914 ; gain = 15.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:36 . Memory (MB): peak = 1465.914 ; gain = 15.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |LUT1      |     5|
+|2     |LUT2      |    22|
+|3     |LUT3      |    34|
+|4     |LUT4      |    23|
+|5     |LUT5      |    43|
+|6     |LUT6      |    72|
+|7     |OSERDESE2 |     8|
+|9     |FDPE      |     2|
+|10    |FDRE      |   117|
+|11    |FDSE      |    15|
+|12    |OBUFDS    |     4|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:36 . Memory (MB): peak = 1465.914 ; gain = 15.980
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:01:29 . Memory (MB): peak = 1465.914 ; gain = 2.828
+Synthesis Optimization Complete : Time (s): cpu = 00:01:11 ; elapsed = 00:01:36 . Memory (MB): peak = 1465.914 ; gain = 15.980
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1465.914 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1484.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 8e03a90b
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:51 . Memory (MB): peak = 1484.625 ; gain = 34.691
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_rgb2dvi_0_0_synth_1/design_1_rgb2dvi_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_rgb2dvi_0_0, cache-ID = 1b64e71a92596370
+INFO: [Coretcl 2-1174] Renamed 10 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Stanc/Documents/Final_proj/hardware/img_pro/img_pro.runs/design_1_rgb2dvi_0_0_synth_1/design_1_rgb2dvi_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_rgb2dvi_0_0_utilization_synth.rpt -pb design_1_rgb2dvi_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 11 08:17:15 2022...
